@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ace Driving School - Bookings</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Load the JQuery library !-->
+		<script src="js/jquery-1.11.1.js"></script>
+		<!-- Load the conditional select javascript file !-->
+		<script type="text/javascript" src="js/bookingform.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="topMenuText">
+				<ul>
+					<li><a href="index.html"><img src="images/logo.png" alt="Home" class="logo_img" /></a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="prices.html">Prices</a></li>
+					<li><a href="bookings.html">Bookings</a></li>
+					<li class="wideMenuItem"><a href="drops_of_wisdom.html">Drops of Wisdom</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<img src="images/car_banner.jpg" alt="A fleet of cars." class="centered_img" />
+		</header>
+		<div id="pageContent">
+			<section id="bookings_content">
+				<article id="bookings_main">
+					<h1>Bookings</h1>
+					<p> Please fill out the following form, and we will contact you to finalise your booking!</p>
+				</article>
+				<form id="booking_form" action="#" method="post">
+					<div id="booking_form_left">
+						<label for="booking_firstname">First Name*</label>
+						<div id="booking_firstname_error"></div>
+						<input tabindex="1"  id="booking_firstname" type="text" value="" name="booking_firstname" />
+						<label for="booking_lastname">Last Name</label>
+						<input tabindex="2"  id="booking_lastname" type="text" value="" name="booking_lastname" />
+						<label for="booking_street">Street</label>
+						<input tabindex="3"  id="booking_street" type="text" value="" name="booking_street" />
+						<label for="booking_suburb">Suburb</label>
+						<input tabindex="4"  id="booking_suburb" type="text" value="" name="booking_suburb" />
+						<label for="booking_postcode">Postcode*</label>
+						<div id="booking_postcode_error"></div>
+						<input tabindex="5"  id="booking_postcode" type="text" value="" name="booking_postcode" />
+						<label for="booking_phone">Phone Number</label>
+						<input tabindex="5"  id="booking_phone" type="text" value="" name="booking_phone" />
+					</div>
+					
+					
+					<div id="booking_form_right">
+						<label for="booking_email">Email Address*</label>
+						<div id="booking_email_error"></div>
+						<input tabindex="6"  id="booking_email" type="text" value="" name="booking_email" />
+						<label for="booking_licencenumber">License Number</label>
+						<input tabindex="7"  id="booking_licencenumber" type="text" value="" name="booking_licencenumber" />
+						<label for="booking_transmission">Transmission*</label>
+						<div id="booking_transmission_error"></div>
+						<select name="booking_transmission" id="booking_transmission" tabindex="8">
+							<option value="select_transmission">Select Transmission</option>
+							<option value="manual">Manual</option>
+							<option value="automatic">Automatic</option>
+						</select>
+						<label for="booking_message">Message</label>
+						<textarea tabindex="9" id="booking_message" rows="9" cols="36" placeholder="Please enter any requests or comments" name="booking_message"></textarea>
+						
+					</div>
+					<div id="booking_bottom">
+						<div id="booking_submit_success"></div>
+						<div id="booking_error"></div>
+						<input id="booking_submit" name="booking_submit" type="submit" value="Submit" />					
+					</div>
+				</form>
+			</section>
+		</div>
+		<footer>
+			<div id="social_media">
+				<a href="facebook.com"><img src="images/icon_facebook.png" alt="Facebook" title="Facebook" class="social_media" /></a>
+				<a href="plus.google.com"><img src="images/icon_google.png" alt="Google Plus" title="Google Plus" class="social_media" /></a>
+				<a href="twitter.com"><img src="images/icon_twitter.png" alt="Twitter" title="Twitter" class="social_media" /></a>
+			</div>
+			<div id="footer_menu">
+				<ul>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="prices.html">Prices</a></li>
+					<li><a href="bookings.html">Bookings</a></li>
+					<li class="wideMenuItem"><a href="drops_of_wisdom.html">Drops of Wisdom</a></li>
+					<li><a href="faqs.html">FAQs</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="footer_copyright">
+				<p>&copy; Ace Driving School  All Rights Reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

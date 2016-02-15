@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ace Driving School - Leave Feedback</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Load the JQuery library !-->
+		<script src="js/jquery-1.11.1.js"></script>
+		<!-- Load Script that stops submit from refreshing and displays  a message!-->
+		<script src="js/feedbackform.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="topMenuText">
+				<ul>
+					<li><a href="index.html"><img src="images/logo.png" alt="Home" class="logo_img" /></a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="prices.html">Prices</a></li>
+					<li><a href="bookings.html">Bookings</a></li>
+					<li class="wideMenuItem"><a href="drops_of_wisdom.html">Drops of Wisdom</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<img src="images/car_banner.jpg" alt="A fleet of cars." class="centered_img" />
+		</header>
+		<div id="pageContent">
+			<section id="feedback_content">
+				<article id="feedback_main">
+					<h1>Leave Feedback</h1>
+					<img src="images/woman_feedback.jpg" alt="A happy customer!" class="feedback_img" />
+					<p id="feedback_bubble">Tell us about your experience with Ace Driving School! </p>
+					<!-- ##!! where is this image from? I think we need a different image here compared to home page. One needs to be a customer, the other some sort of staff member !-->
+
+					<p></p>
+				</article>
+				<form id="feedback_form" action="#" method="post">
+					<div id="feedback_form_left">
+						<label for="feedback_firstname">First Name</label>
+						<input tabindex="1"  id="feedback_firstname" type="text" value="" name="feedback_firstname" />
+						<label for="feedback_lastname">Last Name</label>
+						<input tabindex="2"  id="feedback_lastname" type="text" value="" name="feedback_lastname" />
+						<label for="feedback_instructor">Your Instructor</label>
+						<input tabindex="3"  id="feedback_street" type="text" value="" name="feedback_instructor" />
+						<label for="feedback_message">Message</label>
+						<textarea tabindex="4" id="feedback_message" rows="7" cols="36" placeholder="Please enter any comments" name="feedback_message"></textarea>
+						</div>					
+					<div id="feedback_form_right">
+						<div class="feedbackrow">
+							Were you satisfied with the driving lessons?
+							<label for="satisfied_yes">Yes</label>
+							<input type="radio" name="satisfied" id="satisfied_yes" value="Yes" />
+							<label for="satisfied_no">No</label>
+							<input type="radio" name="satisfied" id="satisfied_no" value="No" />
+						</div>
+						
+						<div class="feedbackrow">
+							Was your instructor friendly during the course?
+							<label for="friendly_yes">Yes</label>
+							<input type="radio" name="friendly" id="friendly_yes" value="Yes" />
+							<label for="friendly_no">No</label>
+							<input type="radio" name="friendly" id="friendly_no" value="No" />
+						</div>
+						
+						<div class="feedbackrow">
+							Have you passed the driving test?
+							<label for="passed_yes">Yes</label>
+							<input type="radio" name="passed" id="passed_yes" value="Yes" />
+							<label for="passed_no">No</label>
+							<input type="radio" name="passed" id="passed_no" value="No" />
+						</div>
+						
+						<div class="feedbackrow">
+							Were the cars you used in pristine condition?
+							<label for="pristine_yes">Yes</label>
+							<input type="radio" name="pristine" id="pristine_yes" value="Yes" />
+							<label for="pristine_no">No</label>
+							<input type="radio" name="pristine" id="pristine_no" value="No" />
+						</div>
+						<div class="feedbackrow">
+							Were the classes given on time?
+							<label for="ontime_yes">Yes</label>
+							<input type="radio" name="ontime" id="ontime_yes" value="Yes" />
+							<label for="ontime_no">No</label>
+							<input type="radio" name="ontime" id="ontime_no" value="No" />
+						</div>
+						<div class="feedbackrow">
+							Would you recommend Ace Driving School?
+							<label for="recommend_yes">Yes</label>
+							<input type="radio" name="recommend" id="recommend_yes" value="Yes" />
+							<label for="recommend_no">No</label>
+							<input type="radio" name="recommend" id="recommend_no" value="No" />
+						</div>				
+						<div class="feedbackrow">
+							<div id="feedback_submit_success"></div>
+							<input id="feedback_submit" name="feedback_submit" type="submit" value="Submit" />	
+						</div>							
+					</div>
+					<div id="feedback_bottom">
+					
+					</div>
+				</form>
+			</section>
+		</div>
+		<footer>
+			<div id="social_media">
+				<a href="facebook.com"><img src="images/icon_facebook.png" alt="Facebook" title="Facebook" class="social_media" /></a>
+				<a href="plus.google.com"><img src="images/icon_google.png" alt="Google Plus" title="Google Plus" class="social_media" /></a>
+				<a href="twitter.com"><img src="images/icon_twitter.png" alt="Twitter" title="Twitter" class="social_media" /></a>
+			</div>
+			<div id="footer_menu">
+				<ul>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="prices.html">Prices</a></li>
+					<li><a href="bookings.html">Bookings</a></li>
+					<li class="wideMenuItem"><a href="drops_of_wisdom.html">Drops of Wisdom</a></li>
+					<li><a href="faqs.html">FAQs</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="footer_copyright">
+				<p>&copy; Ace Driving School  All Rights Reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

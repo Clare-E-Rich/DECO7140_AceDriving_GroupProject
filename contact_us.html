@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ace Driving School - Contact Us</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- Load the JQuery library !-->
+		<script src="js/jquery-1.11.1.js"></script>
+		<!-- Load the form validation javascript file !-->
+		<script type="text/javascript" src="js/contactusform.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="topMenuText">
+				<ul>
+					<li><a href="index.html"><img src="images/logo.png" alt="Home" class="logo_img" /></a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="prices.html">Prices</a></li>
+					<li><a href="bookings.html">Bookings</a></li>
+					<li class="wideMenuItem"><a href="drops_of_wisdom.html">Drops of Wisdom</a></li>
+					<li><a href="contact_us.html" class="currentPage">Contact Us</a></li>
+				</ul>
+			</nav>
+			<img src="images/car_banner.jpg" alt="A fleet of cars." class="centered_img" />
+		</header>
+		<div id="pageContent">
+			<section id="contactus_content">
+				<article id="contactus_main">
+					<h1>Contact Us</h1>
+				</article>				
+				<div id="contactus_left">
+					<form id="contactus_form" action="#" method="post">
+						<label for="contactus_firstname">First Name*</label>
+						<div id="contactus_firstname_error"></div>
+						<input tabindex="1"  id="contactus_firstname" type="text" value="" name="contactus_firstname" />
+						<label for="contactus_lastname">Last Name</label>
+						<input tabindex="2"  id="contactus_lastname" type="text" value="" name="contactus_lastname" />
+						<label for="contactus_phone">Phone Number</label>
+						<input tabindex="5"  id="contactus_phone" type="text" value="" name="contactus_phone" />
+						<label for="contactus_email">Email Address*</label>
+						<div id="contactus_email_error"></div>
+						<input tabindex="6"  id="contactus_email" type="text" value="" name="contactus_email" />
+						<label for="contactus_message">Message*</label>
+						<div id="contactus_message_error"></div>
+						<textarea tabindex="9" id="contactus_message" rows="9" cols="36" placeholder="Write your message" name="contactus_message"></textarea>
+						<div id="contactus_submit_success"></div>
+						<div id="contactus_error"></div>
+						<div id="contactus_submit_success2"></div>
+						<input id="contactus_submit" name="contactus_submit" type="submit" value="Submit" />	
+					</form>
+					</div>
+				<div id="contactus_right">
+						<p>Ace Driving Schools Accredited driver trainers provide lessons in automatic and manual cars in all Brisbane Northside and Brisbane Southside suburbs.</p>
+						<p>Our Driving School is located in a range of suburbs in Brisbane including the Northside and Southside inner city areas. All Northside Brisbane suburbs including Albany Creek, Aspley, Bridgeman Downs, Chermside, Brendale, Strathpine and Bald Hills.</p>
+						<object type="text/html" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113286.79816548844!2d153.0619172572098!3d-27.46264479162822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a045cf620bb%3A0x502a35af3de84c0!2sBrisbane+QLD!5e0!3m2!1sen!2sau!4v1402123632792" height="340" width="570"></object>
+				</div>	
+			</section>
+		</div>
+		<footer>
+			<div id="social_media">
+				<a href="https://www.facebook.com/" target="_blank"><img src="images/icon_facebook.png" alt="Facebook" title="Facebook" class="social_media" /></a>
+				<a href="https://plus.google.com/" target="_blank"><img src="images/icon_google.png" alt="Google Plus" title="Google Plus" class="social_media" /></a>
+				<a href="https://twitter.com/" target="_blank"><img src="images/icon_twitter.png" alt="Twitter" title="Twitter" class="social_media" /></a>
+			</div>
+			<div id="footer_menu">
+				<ul>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="prices.html">Prices</a></li>
+					<li><a href="bookings.html">Bookings</a></li>
+					<li class="wideMenuItem"><a href="drops_of_wisdom.html">Drops of Wisdom</a></li>
+					<li><a href="faqs.html">FAQs</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="footer_copyright">
+				<p>&copy; Ace Driving School  All Rights Reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>

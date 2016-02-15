@@ -1,0 +1,970 @@
+/********************************/
+/*								*/
+/*			Main Styles			*/
+/*								*/
+/********************************/
+
+html {
+	background: #ffffff;
+	font-family: Georgia, Sans-serif;
+	color: #344a5f;
+	font-size: 13pt;
+}
+
+body {
+	width: 1200px;
+	margin: auto;
+}
+
+/********************************/
+/*			Text				*/
+/********************************/
+
+h1 {
+	font-size: 20pt;
+	font-weight: bold;
+	border-bottom: 1px solid #344A5F;
+}
+
+h2 {
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+p {
+	text-align: justify;  
+	/*!!!I like justify, but we were told in the lectures to use align left.*/
+	line-height: 1.4em;
+}
+
+
+/********************************/
+/*									 	  */
+/*			Header					  */
+/*										  */
+/********************************/
+
+/********************************/
+/*		Horizontal Menu Bar		  */
+/********************************/
+
+#topMenuText ul {
+	padding: 1em;
+	list-style-type: none;
+	text-align: center;
+}
+
+#topMenuText ul li {     
+	display: inline-block;     
+	padding-left: 10px;
+	padding-right: 10px;     
+	width: 150px;     
+}
+
+#topMenuText .wideMenuItem {
+	width: 250px;
+}
+
+#topMenuText .currentPage {
+	color: #344A5F;
+}
+
+#topMenuText ul li a {
+	font-size: 18pt;
+	color: #2a94d6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#topMenuText ul li a:hover {
+	font-size: 20pt;
+	font-weight: normal;
+}
+
+
+
+/********************************/
+/*								*/
+/*		Images and Frames		*/
+/*								*/
+/********************************/
+
+img {
+	border-radius: 6pt;
+	border: 1px #0d5a8b solid;
+}
+
+img:hover {
+	border-radius: 6pt;
+	border: 2px #83c2eb solid;
+}
+
+img.centered_img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+}
+
+img.centered_img:hover {
+	border: 0;
+}
+
+img.logo_img {
+	width: 150px;
+	height: auto;
+	border: 0;
+}
+
+img.logo_img:hover {
+	border: 0;
+}
+
+img.question_img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	height: 100px;
+	width: auto;
+}
+
+img.question_img:hover {
+	border: 0;
+}
+
+img.feedback_img {
+	margin-top: 2em;
+	border: 0;
+	height: 100px;
+	width: auto;
+}
+
+img.feedback_img:hover {
+	border: 0;
+}
+
+
+
+/********************************/
+/*								*/
+/*			Page Content		*/
+/*								*/
+/********************************/
+
+#pageContent {
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+}
+
+#leftColumn {
+	float: left;
+	width: 75%;
+/*	border: 1px solid blue;		*/
+	padding: 10px;
+}
+
+#rightColumn {
+	float: right;
+	width: 20%;
+/*	border: 1px solid red;		*/
+	padding: 10px;
+}
+
+.floatLeft4 {
+	float: left;
+	width: 40%;
+	padding: 0 30px 0 30px;
+}
+
+.floatLeft3 {
+	clear: both;
+}
+
+.floatLeft2 {
+	float: left;
+	width: 58%;
+	margin-right: 30%;
+}
+
+.floatLeft1 {
+	float: left;
+	width: 28%;
+	margin-right: 3%;
+	padding: 0 10px 10px 10px;
+}	
+	/*
+	float: left;
+	width: 25%;
+	margin-right: 3%;
+	background: #F2F2F2;
+	padding: 15px;
+	border-radius: 15px;
+	height: 280px; */
+
+
+.floatLeft1 p {
+	line-height: 1.1em;
+}
+
+
+/********************************/
+/*			Home Page			*/
+/********************************/
+
+/*			Speech Bubble 		*/
+/* 	Speech Buttle code found at:
+	http://konigi.com/tools/css-tooltips-and-speech-bubbles */
+
+.bubble {
+  position: relative;
+  margin: 0;
+  padding:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 0 3px rgba(0,0,0,0.25); 
+}
+
+.bubble:after {
+  position: absolute;
+  display: block;
+  content: "";  
+  border-color: #eee transparent transparent transparent;
+  border-style: solid;
+  border-width: 15px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:-31px;
+  left:1em;
+}
+
+
+/****************************************/
+/*  JAVASCRIPT IMAGE SLIDER 			*/
+/*										*/
+/*  Author:  Nathan Searles 			*/
+/*  Scorce:  http://www.slidesjs.com/ 	*/
+/****************************************/
+
+#slides {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container img {
+	border: 0;
+	border-radius: 0;
+	display: inline;
+}
+
+#slides .slidesjs-previous {
+	float: left;
+	height: 100px;
+	width: 30px;
+	background-image: url('../images/arrowleft.png');
+	background-size: 30px 100px;
+	background-repeat: no-repeat;
+	color: transparent;
+	position: relative;
+	top:-100px;
+	z-index: 100;
+}
+
+#slides .slidesjs-next {
+	float: right;
+	height: 100px;
+	width: 30px;
+	background-image: url('../images/arrowright.png');
+	background-size: 30px 100px;
+	background-repeat: no-repeat;
+	color: transparent;
+	position: relative;
+	top:-100px;
+	z-index: -1;
+	z-index: 100;
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+    body {
+	    padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container {
+    	width: auto;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+    .container {
+	    width: auto;
+  	}
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  	.container {
+    	width: 724px;
+  	}
+}
+
+/* For larger displays */
+@media (min-width: 785px) {
+  	.container {
+   		width: 785px;
+ 	}
+}
+
+/*		Header Links			*/
+a.headerLink {
+	font-size: 20pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: #344a5f;
+}
+
+a.headerLink:hover {
+	font-size: 22pt;
+	font-weight: normal;
+}
+
+
+/********************************/
+/*			About Us 			*/
+/********************************/
+
+.aupic1 {
+	height: 350px;
+	width: 300px;
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 25px;
+}
+
+
+.aup1 {
+	width: 65%;
+	position: relative;
+}
+
+#aup2 {
+	width: 450px;
+	float: left;
+}
+
+#aup3, #aupthree {
+	width: 400px;
+	float: right;
+}
+
+#auvid{
+	width: 380px; 
+	height:350px;
+	float: right;
+}
+
+
+
+
+
+/********************************/
+/*			Prices       		*/
+/********************************/
+
+ .pgs {
+ 	width: 210px;
+ 	float: left;
+ 	position: relative;
+ 	top: 20px;
+ 	left: 40px;
+ }
+
+ #pp1 {
+ 	width: 300px;
+ 	float: left;
+ 	padding-left: 120px;
+ 	padding-right: 50px;
+ 	padding-bottom: 50px;
+}
+
+.pul {
+	width: 300px;
+	text-align: justify;
+	float: left;
+}
+
+#pgv {
+	padding-top: 60px;
+}
+
+
+/********************************/
+/*			Tables				*/
+/********************************/
+.table{
+    width:900px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 2.5px #BFBFBF;
+    position: relative;
+    left: 150px;
+    top:  30px;
+    border-collapse: collapse;
+}
+
+ .th{
+    text-align:left;
+    height: 30px;
+    background-color: #eeeeee;
+    border:1px solid black;
+}
+
+.tr1{
+    background-color: #ffffff;
+    height: 30px;
+    border:1px solid black;
+}
+
+.tr2{
+    background-color: #f8f8f8;
+    height: 30px;
+    border:1px solid black;
+}
+
+
+
+
+/********************************/
+/*			Bookings			*/
+/********************************/
+
+#bookings_content {
+	float: left;
+	width: 98%;
+	padding: 10px;
+	border-bottom: 1px solid #344A5F;
+}
+
+
+#bookings_main {
+	margin-bottom: 40px;
+}
+
+#bookings_main p{
+	text-align: center;
+	margin-top: 40px;
+}
+
+#booking_form {
+	margin: auto;
+
+}
+
+#booking_form_left {
+	float: left;
+	margin-left: 120px;
+
+}
+
+#booking_form_right{
+	float: left;
+	margin-left: 120px;
+}
+
+#booking_bottom{
+	clear: both;
+	float: left;
+	margin-left: 120px;
+	width: 840px;
+}
+
+#booking_form_left input, #booking_form_right input , #booking_form_right textarea{
+	padding: 4px;
+	float: left;
+	clear: both;
+	border: solid;
+	border-color: #2A94D6;
+	border-width: 2pt;
+	border-radius: 4px;
+	width: 350px;
+	margin-bottom: 15px;
+	max-width: 350px;
+}
+
+#booking_form_right select {
+	padding: 4px;
+	float: left;
+	clear: both;
+	border: solid;
+	border-color: #2A94D6;
+	border-width: 2pt;
+	border-radius: 4px;
+	width: 362px;
+	margin-bottom: 15px;
+	font-family: Georgia, Sans-serif;
+}
+
+
+#booking_bottom input{
+	background-color: #F0F1F2;
+	font-family: Georgia, Sans-serif;
+	font-weight: bold;
+	padding: 4px;
+	float: right;
+	border: solid;
+	border-color: #2A94D6;
+	border-width: 2pt;
+	border-radius: 20px;
+	width: 150px;
+}
+
+#booking_form_left label, #booking_form_right  label{
+	clear: both;
+	float: left;
+	width: 150px;
+}
+
+#booking_firstname_error , #booking_postcode_error, #booking_email_error , #booking_transmission_error{
+	clear: both;
+	color: red;
+}
+
+#booking_error{
+	display: inline;
+	color: red;
+}
+
+
+#booking_submit_success {
+	display: inline;
+	color: #2A94D6;
+}
+
+
+/********************************/
+/*		Drops of Wisdom			*/
+/********************************/
+
+.floatLeft3Col {
+	float: left;
+	width: 98%;
+	margin-top: 15px;
+}
+
+.floatLeft4 {
+	float: left;
+	width: 25%;
+}
+
+.floatLeft5 {
+	float: left;
+	width: 58%;
+	margin-right: 5%;
+}
+
+
+/********************************/
+/*			Contact Us 			*/
+/********************************/
+
+
+#contactus_content {
+	float: left;
+	width: 98%;
+	padding: 10px;
+	border-bottom: 1px solid #344A5F;
+}
+
+
+#contactus_main {
+	margin-bottom: 40px;
+}
+
+#contactus_left {
+	float: left;
+	margin-left: 120px;
+
+}
+
+#contactus_right{
+	float: left;
+	margin-left: 120px;
+	width: 573px;
+
+}
+
+#contactus_right object {
+	border: 2pt solid #2A94D6;
+	border-radius: 4px;
+}
+
+#contactus_right p {
+	line-height: 1.1em;
+	margin-top: 0;
+}
+
+#contactus_firstname_error , #contactus_message_error, #contactus_email_error {
+	clear: both;
+	color: red;
+}
+
+#contactus_error{
+	clear: both;
+	color: red;
+}
+
+
+#contactus_submit_success {
+	clear: both;
+	color: #2A94D6;
+}
+
+#contactus_submit_success2 {
+	clear: both;
+	color: #2A94D6;
+}
+
+/* !!! Don't reorder the following two thingies*/
+
+
+#contactus_left input, #contactus_left textarea{
+	padding: 4px;
+	float: left;
+	clear: both;
+	border: 2pt solid #2A94D6;
+	border-radius: 4px;
+	width: 350px;
+	margin-bottom: 15px;
+	max-width: 350px;
+}
+
+#contactus_form #contactus_submit{
+	background-color: #F0F1F2;
+	font-family: Georgia, Sans-serif;
+	font-weight: bold;
+	padding: 4px;
+	float: right;
+	border: solid;
+	border-color: #2A94D6;
+	border-width: 2pt;
+	border-radius: 20px;
+	width: 150px;
+}
+
+
+#contactus_left label{
+	clear: both;
+	float: left;
+	width: 150px;
+}
+
+
+/********************************/
+/*	          FAQ's      	    */
+/********************************/
+
+.floatLeft4 {
+	display: block;
+	float: left;
+	padding: 20px;
+}
+
+
+/********************************/
+/*	   Informative Tips         */
+/********************************/
+
+
+
+.question_img {
+	display: block;
+	float: left;
+	padding: 20px 70px 70px 70px;
+}
+
+.floatLeft1 {
+	display: block;
+	float: left;
+}
+
+
+
+
+/********************************/
+/*			Feedback			*/
+/********************************/
+
+#feedback_content{
+	float: left;
+	width: 98%;
+	padding: 10px;
+	border-bottom: 1px solid #344A5F;
+}
+
+#feedback_form_left input, #feedback_form_left textarea{
+	padding: 4px;
+	float: left;
+	clear: both;
+	border: 2pt solid #2A94D6;
+	border-radius: 4px;
+	width: 350px;
+	margin-bottom: 15px;
+	max-width: 350px;
+}
+
+#feedback_form_left label{
+	clear: both;
+	float: left;
+	width: 150px;
+}
+
+#feedback_form_left{
+	float: left;
+	clear: both;
+}
+
+#feedback_form_right{
+	float: right;
+	width: 810px;
+}
+
+#feedback_form_right input{
+	float: right;
+}
+
+#feedback_form_right label{
+	width: 75px;
+	float: right;
+}
+
+.feedbackrow {
+	clear: both;
+	margin: 30px 0px 30px 120px;
+}
+
+
+.feedbackrow  #feedback_submit{
+	display: inline;
+	background-color: #F0F1F2;
+	font-family: Georgia, Sans-serif;
+	font-weight: bold;
+	padding: 4px;
+	float: right;
+	border: solid;
+	border-color: #2A94D6;
+	border-width: 2pt;
+	border-radius: 20px;
+	margin-right: 40px;
+	width: 150px;
+}
+
+
+
+#feedback_submit_success{
+	display: inline;
+	color: #2A94D6;
+	
+}
+
+#feedback_main img{
+	margin: 0;
+	float: left;
+	background-color: red;
+	margin-bottom: 40px;
+}
+
+/*			Speech Bubble 		*/
+/* 	Speech Buttle code found at:
+	http://konigi.com/tools/css-tooltips-and-speech-bubbles 
+	and
+	http://jonrohan.me/guide/css/creating-triangles-in-css/ 	*/
+
+#feedback_bubble {
+	float: left;
+	display: inline;
+	margin: 0 0 0 30px;
+	position: relative;
+	padding:10px;
+	width: 170px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+	box-shadow: 0px 0 3px rgba(0,0,0,0.25); 
+}
+
+#feedback_bubble:after {
+  position: absolute;
+  display: block;
+  content: "";  
+  border-color: transparent #eee transparent transparent;
+  border-style: solid;
+  border-width: 15px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:0;
+  left:-31px;
+}
+	
+
+/********************************/
+/*			Careers       		*/
+/********************************/
+
+ .cp1 {
+ 	width: 60%;
+ 	float: left;
+}
+
+.cpic1 {
+	height:450px;
+	width:300px;
+	position: relative;
+	left: 50px;
+	top: 30px;
+}
+
+.ch1{
+	padding-top: 35px;
+}
+
+.ch2{
+	padding-top: 132px;
+}
+
+#cp3{
+	width: 420px;
+	float: left;
+}
+
+#cp4 {
+	width: 420px;
+	float: right;
+}
+
+#cvid {
+	width:250px; 
+	height:220px;
+}
+
+
+
+
+/********************************/
+/*								*/
+/*			Footer				*/
+/*								*/
+/********************************/
+
+/********************************/
+/*		Social Media Images 	*/
+/********************************/
+
+#social_media {
+	background-color: #3f7aa1;
+	float: left;
+	width: 30%;
+	height: 50px;
+	text-align: right;
+}
+
+#social_media ul {
+	padding-top: 0;
+	padding: .5em;
+	list-style-type: none;
+	text-align: center;
+}
+
+#social_media ul li {     
+	display: inline-block;     
+	padding-left: 5px;
+	padding-right: 5px;     
+	
+}
+
+img.social_media:hover {
+	border: 0;
+}
+
+img.social_media {
+	border: 0;
+	height: 45px;
+	width: auto;
+	margin-top: 3px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/********************************/
+/*			Footer Menu		 	*/
+/********************************/
+
+#footer_menu {
+	background-color: #f0f1f2;
+	float: right;
+	width: 70%;
+	height: 50px;
+}
+
+#footer_menu ul li a {
+	font-size: 10pt;
+	color: #2a94d6;
+	font-weight: normal;
+	text-decoration: none;
+	
+}
+
+#footer_menu ul li a:hover {
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+#footer_menu ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 15px;
+	padding: 0px;
+	text-align: center;
+}
+
+#footer_menu ul li {     
+	display: inline-block;     
+	padding-left: 5px;
+	padding-right: 5px;     
+	width: 80px;     
+}
+
+#footer_menu .wideMenuItem {
+	width: 150px;
+}
+
+
+/********************************/
+/*			Copyright		 	*/
+/********************************/
+
+#footer_copyright {
+	background-color: #344A5F;
+	width: 100%;
+	height: 30px;
+	clear: both;
+	color: white
+}
+
+#footer_copyright p {
+	padding-left: 10px;
+}
+
